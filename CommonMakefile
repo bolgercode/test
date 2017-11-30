@@ -1,0 +1,19 @@
+#Makefile
+#
+#common Makefile for tiddler Build system
+
+#Used Tools
+CAT := cat
+CP := cp
+DATE := date
+ECHO := echo
+GIT := git
+LS := ls
+MAKE := make
+RM := rm
+SED := sed
+SHELL := bash
+UNZIP := unzip
+TR := tr
+WHOAMI := whoami
+ZIP := zip
