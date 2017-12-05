@@ -1,0 +1,26 @@
+title: Tiddlywiki internal references
+type: text/vnd.tiddlywiki
+
+In Tiddlywiki when you want to get the data from a tiddler included in your current context you use what is called transclusion
+
+https://tiddlywiki.com/static/Transclusion%2520in%2520WikiText.html
+
+https://tiddlywiki.com/static/Transclusion%2520and%2520Substitution.html
+
+It is a really powerful tool to make jsondata structures in your tiddlywiki and then referencing  that to make the same item affect multiple instances.
+
+Try it out by making a new tiddly like below and change its type to JSON data
+
+```
+[
+    {
+        "Company": "noname"
+    }
+]
+
+```
+then in another tiddler call 
+
+```
+
+```
