@@ -1,6 +1,10 @@
 title: TiddlyWiki Node js quick reference guide
 type: text/vnd.tiddlywiki
 
+https://www.npmjs.com/package/tiddlywiki
+
+https://tiddlywiki.com/static/ServerCommand.html
+
 Howto install tiddlywiki under nodejs
 
 The instruction below describe global installation, if you want to limit installation to a specific folder skip the -g flag. <br>
