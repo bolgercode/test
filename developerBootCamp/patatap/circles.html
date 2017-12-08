@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles</title>
+	<script type="text/javascript" src="paper-full.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.core.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css">
+	<script type="text/paperscript" canvas="myCanvas">
+
+var keyData = {
+	a:{
+		color: "purple",
+		sound: new Howl({src: ['sounds/bubbles.mp3']})
+	},
+	s:{
+		color: "green",
+		sound: new Howl({src: ['sounds/clay.mp3']})
+	},
+	d:{
+		color: "green",
+		sound: new Howl({src: ['sounds/confetti.mp3']})
+	}	
+}
+ 
+var sound = new Howl({
+  src: ['sounds/bubbles.mp3']
+});
+
+var sound2 = new Howl({
+  src: ['sounds/clay.mp3']
+});
+
+var circles = [];
+
+function onKeyDown(event) {
+		if(!keyData[event.key]){return;}
+		var maxPoint = new Point(view.size.width, view.size.height);
+		var randomPoint = Point.random();
+		var newCircle= new Path.Circle(maxPoint * randomPoint,300);
+		project.activeLayer.lastChild.fillColor = keyData[event.key].color;
+		keyData[event.key].sound.play();
+		circles.push(newCircle);		
+}
+
+function onFrame(event){
+	for( var n = 0; n < circles.length; n++){
+		circles[n].fillColor.hue += 1;
+		circles[n].scale(.95);
+	}
+
+
+}
+
+	</script>
+}
+</head>
+<body>
+ <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

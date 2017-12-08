@@ -1,0 +1,22 @@
+/*	selector {
+
+
+	}*/
+	body {
+		background: url("file://C:/git/developerBootCamp/backround.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}	
+	h1{
+		color: #FF8080;
+/*		border-color: white;
+		border-width: 5px;
+		border-style: solid;*/
+		border: 8px white solid;
+	}
+	h4{
+		color: purple;
+	}
+	li{
+		color: green;
+	}
