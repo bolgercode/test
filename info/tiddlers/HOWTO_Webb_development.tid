@@ -1,0 +1,169 @@
+created: 20171117151814219
+modified: 20171208130345730
+title: HOWTO_Webb_development
+type: text/vnd.tiddlywiki
+
+Short notes on general web development resources: <br>
+excellent site: https://www.w3schools.com/ <br>
+
+https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview
+
+---
+
+!MDN - Moszilla developer Network, great resource for web development. <br>
+https://developer.mozilla.org/en-US/
+
+element reference: <br>
+https://developer.mozilla.org/en/docs/Web/HTML/Element
+
+attribute reference <br>
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+<br>
+Imporant attributes: src, http
+
+javascript reference arrays: <br>
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+---
+!CSS
+http://www.csszengarden.com/
+
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+https://developer.mozilla.org/en/docs/Web/CSS/Specificity
+
+---
+!fonts
+
+http://www.cssfontstack.com/
+
+---
+!Bootstrap
+Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.<br>
+http://getbootstrap.com/
+
+---
+!Font Awesome
+The iconic font and CSS toolkit <br>
+http://fontawesome.io/
+
+---
+!Dom manipulation
+
+document.getElementById()
+
+document.getElementByClassName()
+
+document.getElementByTagName()
+
+document.querySelector()
+
+document.querySelectorAll()
+
+---
+
+!JQuery
+Library to assist DOM manipulation<br>
+https://jquery.com/
+
+
+```
+$("ul").on("click","span", function(event){
+	$(this).parent().fadeOut(500,function() {$(this).remove()} );
+	event.stopPropagation();
+});
+
+```
+
+https://uigradients.com/#Greentodark
+
+
+---
+!Sounds
+
+https://howlerjs.com/
+
+https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.core.min.js
+
+---
+
+!Stack
+
+https://stackshare.io/
+
+---
+!Backend!
+A way to implement back end services is to run a express framework on node js.
+node js is a javascript enterpreter and express is a framework on node js.
+
+Node.js javascript on backend.
+
+*[[HOWTO_NODEJS]] 
+https://nodejs.org/en/
+
+npm ! <br>
+ npm init
+
+!Framework
+
+express:  https://expressjs.com/
+
+---
+!Online development platform
+https://ide.c9.io - still free development platform to test building back-end web tools.
+
+use
+
+```
+ res.render() 
+```
+to generate html from ejs file
+
+node express start server on c9.io
+
+```
+//Tell Express to listen for requests (start server)
+app.listen(process.env.PORT,process.env.IP, function(){
+    console.log("Server started");
+});
+```
+
+---
+
+!APIs
+
+https://ifttt.com/
+
+https://www.programmableweb.com/
+
+
+Package that handle api requests
+https://github.com/request/request
+
+
+---
+!Database
+[[HOWTO_mongodb]]
+https://www.mongodb.com/
+
+sudo apt-get install -y mongodb-org
+
+http://mongoosejs.com/
+
+---
+
+!Other resources
+
+https://docs.nodejitsu.com/
+
+https://nodeschool.io/
+
+
+Node js  application as a install package:
+https://github.com/auth0/nodejs-msi
+
+
+---
+!Free images for webbdevelopment
+
+http://www.photosforclass.com/
