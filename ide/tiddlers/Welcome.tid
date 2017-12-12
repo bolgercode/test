@@ -1,8 +1,10 @@
 created: 20171130173120221
-modified: 20171205205847648
+modified: 20171209155632096
 tags: 
 title: Welcome
 type: text/vnd.tiddlywiki
 
-{{logoname.svg}}
 Your professional Engineering solutions provider
+[img[svgtest.svg]]
+<br>
+{{logoname.svg}}
