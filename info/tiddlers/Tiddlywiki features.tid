@@ -1,0 +1,28 @@
+title: Tiddlywiki features
+type: text/vnd.tiddlywiki
+
+Tiddlywiki can have plain text
+
+!Headings
+
+!!Sub headings
+
+|tables| col1|col2|
+|row 1|
+|row 2|
+
+<<tabs "'A little info' 'Other info' ">>
+
+
+
+
+<$button class="tc-btn-invisible" popup=<<qualify "$:/temp/popup">>>
+
+!heading text
+</$button>
+<$reveal type="nomatch" state=<<qualify "$:/temp/popup">> text="">
+
+section content goes here
+
+</$reveal>
+

@@ -1,4 +1,4 @@
-list: $:/AdvancedSearch $:/core svgtest Welcome
+list: Welcome [[Tiddlywiki features]] StateTiddlers
 title: $:/StoryList
 type: text/vnd.tiddlywiki
 
