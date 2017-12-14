@@ -1,21 +1,20 @@
 created: 20171204142253398
 modified: 20171204142414942
-tags: 
+tags:
 title: Welcome
 type: text/vnd.tiddlywiki
 
 This tiddlywiki explore the usage of tiddlywiki
-A tiddlywiki is a collection of tiddlers with a framework that collects these tiddlers into a wiki, 
+A tiddlywiki is a collection of tiddlers with a framework that collects these tiddlers into a wiki,
 Each tiddler contain preferably small data elements.
 Shadow tiddlers is a special kind of tiddlers that control settings of the wiki and other tiddlers.<br>
 
 Frequently used   links
 
-[[Webb solutions to mimic frame]]
-
 [[TiddlyWiki Node js quick reference guide]]
 
 [[Tiddlywiki tweak environment]]
+
 
 [[Tiddlywiki features]]
 
