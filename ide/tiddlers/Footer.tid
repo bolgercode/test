@@ -1,11 +1,15 @@
 created: 20171211175506530
-modified: 20171211175621340
+modified: 20171217175707297
 tags: 
 title: Footer
 type: text/vnd.tiddlywiki
 
 <div style="background: rgba(0,0,0,0) linear-gradient(to bottom, rgb(255,255,255), rgb(89,93,194)) repeat scroll 0% 0%">
+<div style="font-size: 50%" align="center">
+copyright: 2017
+</div>
 <div align="right">
+
 {{logoname.svg}}
 </div>
 </div>
