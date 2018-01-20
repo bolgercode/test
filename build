@@ -3,14 +3,17 @@ rm -rf BUILD
 mkdir BUILD
 mkdir ./BUILD/temp
 mkdir ./BUILD/webb
-node ./node_modules/tiddlywiki/tiddlywiki.js ./BUILD/temp --init server
+node ./node_modules/tiddlywiki/tiddlywiki.js ./BUILD/temp --init
 mkdir ./BUILD/temp/tiddlers
 rm ./singlefile/logoname.svg
 cp ./ide/tiddlers/logoname.svg ./singlefile/
 cp ./ide/tiddlers/* ./BUILD/temp/tiddlers
+mkdir ./BUILD/temp/control
 cp ./control/tiddlers/* ./BUILD/temp/tiddlers
-node ./node_modules/tiddlywiki/tiddlywiki.js ./BUILD/temp --rendertiddler $:/core/save/all tiddlywiki.html text/plain
+node ./node_modules/tiddlywiki/tiddlywiki.js ./BUILD/temp --rendertiddler $:/core/save/all tiddlywiki2.html text/plain
+node ./node_modules/tiddlywiki/tiddlywiki.js ./BUILD/temp --render $:/core/save/all tiddlywiki.html text/plain
 cp ./BUILD/temp/output/tiddlywiki.html ./BUILD/webb
+cp ./BUILD/temp/output/tiddlywiki2.html ./BUILD/webb
 cp ./singlefile/index.* ./BUILD/webb
 cp ./singlefile/*.jpg ./BUILD/webb
 cp ./ide/tiddlers/logoname.svg ./BUILD/webb

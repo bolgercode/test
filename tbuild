@@ -1,0 +1,28 @@
+#!/bin/bash
+rm -rf BUILD2
+mkdir BUILD2
+mkdir ./BUILD2/temp
+mkdir ./BUILD2/webb
+node ./node_modules/tiddlywiki/tiddlywiki.js ./BUILD2/temp --init
+mkdir ./BUILD2/temp/tiddlers
+cp ./temp/tiddlers/*.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/*.svg ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__DefaultTiddlers.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__palette.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__SiteSubtitle.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__SiteTitle.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__StoryList.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__theme.tid ./BUILD2/temp/tiddlers
+
+#ok
+
+cp ./ide/tiddlers/\$__config_NewJournal_Title.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__config_TextEditor_EnableToolbar.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__config_Toolbar_ButtonClass.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__config_Toolbar_Icons.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__config_Toolbar_Text.tid ./BUILD2/temp/tiddlers
+cp ./ide/tiddlers/\$__config_WikiParserRules_Inline_wikilink.tid ./BUILD2/temp/tiddlers
+
+
+node ./node_modules/tiddlywiki/tiddlywiki.js ./BUILD2/temp --render $:/core/save/all b2.html text/plain
+cp ./BUILD2/temp/output/b2.html ./BUILD2/webb
